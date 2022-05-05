@@ -1,0 +1,10 @@
+FROM ubuntu
+RUN apt update && apt install -y apt-transport-https
+RUN apt install -y gcc
+RUN apt install -y python3
+RUN apt install -y libcurl3-dev
+COPY ex2.c .
+COPY do_not_change/aux_files ./aux_files/
+COPY do_not_change/run_tests.sh .
+RUN gcc ex2.c -o ex2.out -lcurl -pthread
+CMD ./run_tests.sh

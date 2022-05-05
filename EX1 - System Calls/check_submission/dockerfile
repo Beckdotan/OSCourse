@@ -1,0 +1,9 @@
+FROM ubuntu
+RUN apt update
+RUN apt install -y gcc
+RUN apt install -y python3
+COPY ex1.c .
+COPY do_not_change/check_hw.py .
+COPY do_not_change/tests ./tests/
+COPY do_not_change/aux_files ./aux_files/
+CMD python3 check_hw.py

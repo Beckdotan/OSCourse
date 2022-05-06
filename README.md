@@ -1,5 +1,5 @@
 # OS Course
-### Sys-calls, Processes, Multiprocessing and Synchronization
+### C $ Java programs implements Sys-calls, Processes, Multiprocessing and Synchronization
 
 My Answers To All "C" and "Java"  Coding Assignments from Opereting Systems Course.
  
